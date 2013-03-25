@@ -1,8 +1,15 @@
 ﻿
 
 .CallEdxFromAjax_ExtensionContainer {
+    position:relative;
     width:100%;
     overflow: auto;
+    padding-left:10px;
+}
+
+.CallEdxFromAjax_ButtonContainer {
+    margin-top:10px;
+    margin-bottom:10px;
 }
 
 /* Button Styles */
@@ -39,7 +46,6 @@
 .CallEdxFromAjax_OutputContainer {
     font-family:Arial, sans-serif;
     font-size:0.8em;
-    width:90%;
 }
 
 /* Output definition */

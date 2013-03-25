@@ -29,6 +29,12 @@
   
   <!-- 8 -->
   <Text Label="Status: Poll Interval" Type="text" Initial="" Expression="2" />
+  
+  <!-- 9 -->
+  <Text Label="Variable Name:" Type="text" Initial="" />
+  
+  <!-- 10 -->
+  <Text Label="Variable Valuelist:" Type="text" Initial="" />
 
   <PropertiesPage Version="11" File="MyProperties.qvpp" />
 

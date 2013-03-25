@@ -22,18 +22,23 @@ Qva.AddExtension("CallEDXFromAjax",
                 $(_this.Element).empty();
                 var divExt = document.createElement("div");
                 divExt.setAttribute("id", _this.ExtSettings.UniqueId);
-                divExt.style.width = _this.GetWidth() + 30 + 'px';
+                divExt.style.width = _this.GetWidth() - 10 + 'px';
                 divExt.style.height = _this.GetHeight() + 'px';
                 divExt.setAttribute("class", "CallEdxFromAjax_ExtensionContainer");
 
-                //<a href="#" class="classname">my button</a>
+                
+                var divButtonContainer = document.createElement("div");
+                divButtonContainer.setAttribute("class", "CallEdxFromAjax_ButtonContainer")
+
                 var divButton = document.createElement("a");
                 divButton.setAttribute("href", "javascript:void(0);");
                 divButton.setAttribute("id", "button_" + _this.ExtSettings.UniqueId);
                 divButton.setAttribute("class", "CallEdxFromAjax_Button");
                 divButton.innerText = _this.ExtSettings.ButtonLabel;
                 divButton.addEventListener("click", button_click, false);
-                divExt.appendChild(divButton);
+                divButtonContainer.appendChild(divButton);
+
+                divExt.appendChild(divButtonContainer);
 
                 var divOutputContainer = document.createElement("div");
                 divOutputContainer.setAttribute("class", "CallEdxFromAjax_OutputContainer");
@@ -108,9 +113,9 @@ Qva.AddExtension("CallEDXFromAjax",
                 var qvData = new Object();
                 qvData.taskName = _this.ExtSettings.TaskName;
                 qvData.password = _this.ExtSettings.TaskPassword;
-                qvData.variableName = "";
-                qvData.variableValues = "";
-                qvData.variableValueDelimiter = "";
+                qvData.variableName = _this.ExtSettings.VariableName;
+                qvData.variableValues = _this.ExtSettings.VariableValues;
+                qvData.variableValueDelimiter = ","; //Todo: could be also configurable using the props ...
 
                 return qvData;
 
@@ -139,6 +144,8 @@ Qva.AddExtension("CallEDXFromAjax",
                 {
                     _this.ExtSettings.StatusPollInterval = 2000;
                 }
+                _this.ExtSettings.VariableName = getQVStringProp(9);
+                _this.ExtSettings.VariableValues = getQVStringProp(10);
             }
 
             // ------------------------------------------------------------------
