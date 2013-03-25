@@ -19,9 +19,17 @@ namespace EDXWrapper
     {
 
         [WebMethod(false)]
-        public WSResponse_EDXTrigger TriggerEDXTask(string taskName, string password, string variableName, string variableValues, string variableValueDelimiter = ",")
+        public WSResponse_EDXTrigger TriggerEDXTask(string taskName, string password, string variableName, string variableValues, char variableValueDelimiter = ',')
         {
             WSResponse_EDXTrigger retVal = new WSResponse_EDXTrigger();
+
+            List<string> variableValueList = new List<string>();
+            var o = variableValues.Split(variableValueDelimiter);
+            if (o != null)
+            {
+                variableValueList = o.ToList<string>();
+            }
+
 
             QmsAPI.QMSClient apiClient = new QmsAPI.QMSClient();
 
@@ -34,8 +42,7 @@ namespace EDXWrapper
             if (qvsService != null)
             {
                 // run it on the first QlikView Distribution Service available
-                List<string> variableValueList = new List<string>();
-                TriggerEDXTaskResult result = apiClient.TriggerEDXTask(qvsService.ID, taskName, password, string.Empty, null);
+                TriggerEDXTaskResult result = apiClient.TriggerEDXTask(qvsService.ID, taskName, password, variableName, variableValueList);
                 Guid execId = result.ExecId;
 
                 if (result.EDXTaskStartResult == EDXTaskStartResult.Success)
