@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8b64567e-75d9-4838-835b-fd4ceeb9bd68" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:4799/QMS/Service" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="QMSBackendService.wsdl" MetadataType="Wsdl" ID="58d1daf2-dab2-4cad-a47a-7978e5ca359c" SourceId="1" SourceUrl="http://localhost:4799/QMS/Service" />
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="460a2c87-be32-4366-b58b-87f07817821f" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?xsd=xsd2" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="851c8e44-671b-46b1-8db5-015798bbeb33" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?xsd=xsd4" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="9a0324c9-2f2e-4013-a2fd-0ecd7df47f2d" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?xsd=xsd8" />
+    <MetadataFile FileName="Service3.xsd" MetadataType="Schema" ID="7050b4fd-4544-41b0-8d1a-b132d9a0345d" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?xsd=xsd1" />
+    <MetadataFile FileName="Service4.xsd" MetadataType="Schema" ID="7118f462-9551-4646-8aca-72217f195198" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?xsd=xsd6" />
+    <MetadataFile FileName="Service5.xsd" MetadataType="Schema" ID="6b67e070-55a4-402b-8b93-c6edb1506e0e" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?xsd=xsd10" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="8a5f2a01-a929-473a-b8da-343a4868181c" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?wsdl=wsdl1" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="812e1ba3-c06c-4031-9a37-6a960109468b" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?wsdl=wsdl0" />
+    <MetadataFile FileName="Service6.xsd" MetadataType="Schema" ID="8979cdcd-ba71-40d6-b6af-87afd53ae985" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?xsd=xsd0" />
+    <MetadataFile FileName="Service7.xsd" MetadataType="Schema" ID="d7cd3df5-3fe9-455f-9114-a3b3bd5f31dc" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?xsd=xsd5" />
+    <MetadataFile FileName="Service8.xsd" MetadataType="Schema" ID="db8e9917-1158-417a-9ca2-ee095fbaaa7e" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?xsd=xsd3" />
+    <MetadataFile FileName="Service9.xsd" MetadataType="Schema" ID="cfab983b-de42-40d4-b0ac-05724b55a0f1" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?xsd=xsd9" />
+    <MetadataFile FileName="Service10.xsd" MetadataType="Schema" ID="f75586ae-2be6-4c9e-bae4-66f333e701b3" SourceId="1" SourceUrl="http://demuc-sw01:4799/QMS/Service?xsd=xsd7" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
