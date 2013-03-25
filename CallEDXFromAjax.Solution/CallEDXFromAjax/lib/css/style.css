@@ -1,0 +1,55 @@
+﻿
+
+.CallEdxFromAjax_ExtensionContainer {
+    width:100%;
+    overflow: auto;
+}
+
+/* Button Styles */
+/* http://www.cssbuttongenerator.com/*/
+
+
+.CallEdxFromAjax_Button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #caefab;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #caefab;
+	box-shadow:inset 0px 1px 0px 0px #caefab;
+	background-color:#77d42a;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #268a16;
+	display:inline-block;
+	color:#306108;
+	font-family:Arial;
+	font-size:1em;
+	font-weight:bold;
+	padding:4px 36px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #aade7c;
+}
+.CallEdxFromAjax_Button:hover {
+	background-color:#5cb811;
+}
+
+.CallEdxFromAjax_Button:active {
+	position:relative;
+	top:1px;
+}
+
+.CallEdxFromAjax_OutputContainer {
+    font-family:Arial, sans-serif;
+    font-size:0.8em;
+    width:90%;
+}
+
+/* Output definition */
+.CallEdxFromAjax_Output_green {
+    color: green;
+}
+.CallEdxFromAjax_Output_red {
+    color:red;
+}
+
+.CallEdxFromAjax_Status {
+    color:gray;
+}

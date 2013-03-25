@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExtensionObject Label="Call EDX From Ajax" Path="CallEDXFromAjax" Description="Call any EDX task defined on QV Publisher via the Ajax Client" Type="object">
+
+  <!-- 0 -->
+  <!--Webservice Url-->
+  <Text Label="Webservice Url:" Type="text" Initial="" Expression="http://localhost/EDXWrapper/QlikViewTasks.asmx" />  
+  
+  <!-- 1 -->
+  <!-- Button Label -->
+  <Text Label="Button Label:" Type="text" Initial="" Expression="Reload Document" />
+
+  <!-- 2 -->
+  <Text Label="Task Name:" Type="text" Initial="" Expression="EDX_Call" />
+
+  <!-- 3 -->
+  <Text Label="Task Password:" Type="text" Initial="" Expression="Test1234" />
+  
+  <!-- 4 -->
+  <Text Label="Confirm EDX Trigger Status:" Type="checkbox" Initial="" Expression="1" />
+  
+  <!-- 5 -->
+  <Text Label="Check Status of EDX task:" Type="checkbox" Initial="" Expression="1" />
+  
+  <!-- 6 -->
+  <Text Label="Status Message (success):" Type="text" Initial="EDX Tasks started successfully ..." Expression="EDX Tasks started successfully ..." />
+  
+  <!-- 7 -->
+  <Text Label="Status Message (success):" Type="text" Initial="" Expression="EDX Task could not be started ..." />
+  
+  <!-- 8 -->
+  <Text Label="Status: Poll Interval" Type="text" Initial="" Expression="2" />
+
+  <PropertiesPage Version="11" File="MyProperties.qvpp" />
+
+  
+
+</ExtensionObject>
