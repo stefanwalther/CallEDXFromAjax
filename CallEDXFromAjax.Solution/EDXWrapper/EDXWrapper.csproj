@@ -63,6 +63,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\Resources\License.txt">
+      <Link>License.txt</Link>
+    </Content>
     <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <Content Include="QlikViewTasks.asmx" />
     <None Include="Service References\QmsAPI\configuration91.svcinfo" />
