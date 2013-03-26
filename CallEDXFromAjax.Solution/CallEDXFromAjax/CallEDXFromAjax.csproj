@@ -47,9 +47,11 @@
   <ItemGroup>
     <Content Include="..\Resources\ChangeLog.txt">
       <Link>ChangeLog.txt</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Resources\Copyright.txt">
       <Link>Copyright.txt</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="..\Resources\Extension_Icon\Icon.png">
       <Link>Icon.png</Link>
@@ -57,6 +59,7 @@
     </Content>
     <Content Include="..\Resources\License.txt">
       <Link>License.txt</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Definition.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -90,7 +93,7 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerPort>49344</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:59292/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
