@@ -9,7 +9,8 @@ namespace EDXWrapper
     public class WSResponse_EDXStatus
     {
         private EDXStatus _status = null;
-        public WSResponse_EDXStatus(EDXStatus status)
+
+        public void SetEDXStatus(EDXStatus status)
         {
             _status = status;
         }

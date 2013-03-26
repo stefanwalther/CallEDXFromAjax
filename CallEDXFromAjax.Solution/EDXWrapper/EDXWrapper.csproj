@@ -63,11 +63,18 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\Resources\ChangeLog.txt">
+      <Link>ChangeLog.txt</Link>
+    </Content>
+    <Content Include="..\Resources\Copyright.txt">
+      <Link>Copyright.txt</Link>
+    </Content>
     <Content Include="..\Resources\License.txt">
       <Link>License.txt</Link>
     </Content>
     <Content Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <Content Include="QlikViewTasks.asmx" />
+    <None Include="Properties\PublishProfiles\EDXWrapper.pubxml" />
     <None Include="Service References\QmsAPI\configuration91.svcinfo" />
     <None Include="Service References\QmsAPI\configuration.svcinfo" />
     <Content Include="Service References\QmsAPI\EDXWrapper.QmsAPI.CALConfiguration.datasource">

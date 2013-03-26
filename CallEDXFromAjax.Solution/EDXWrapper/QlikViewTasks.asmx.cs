@@ -84,7 +84,8 @@ namespace EDXWrapper
             {
                 EDXStatus executionStatus = null;
                 executionStatus = apiClient.GetEDXTaskStatus(qdsService.ID, execId);
-                WSResponse_EDXStatus retVal = new WSResponse_EDXStatus(executionStatus);
+                WSResponse_EDXStatus retVal = new WSResponse_EDXStatus();
+                retVal.SetEDXStatus(executionStatus);
                 return retVal;
             }
             return null;        
