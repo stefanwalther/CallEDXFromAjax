@@ -1,0 +1,20 @@
+﻿// ------------------------------------------------------------------
+// Copyright
+// ------------------------------------------------------------------
+// Stefan Walther - 03/26/2013
+//
+// FURTHER INFORMATION:
+//      not yet published, will be published on www.qlikblog.at
+// ~~
+// DOCUMENTATION:
+//      http://qvextcalledxfromajax.codeplex.com/
+// ~~
+// SOURCE CODE:
+//      http://qvextcalledxfromajax.codeplex.com/releases
+// ~~
+// LICENSE:
+//      Microsoft Public License (Ms-PL)
+// ~~
+// REFERENCES:
+//		none
+// ------------------------------------------------------------------
