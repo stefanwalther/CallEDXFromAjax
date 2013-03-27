@@ -1,8 +1,10 @@
-﻿using System;
+﻿#region Using Directives
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using EDXWrapper.QmsAPI;
+using EDXWrapper.QmsAPI; 
+#endregion
 
 namespace EDXWrapper
 {

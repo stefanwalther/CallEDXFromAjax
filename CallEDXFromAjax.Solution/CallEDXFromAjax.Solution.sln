@@ -12,6 +12,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CallEDXFromAjax.WinTest", "
 		{65822DB7-52DA-4E8E-907E-5F7F7C50492F} = {65822DB7-52DA-4E8E-907E-5F7F7C50492F}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{2639998E-F773-4B1D-9306-424F50A8E466}"
+	ProjectSection(SolutionItems) = preProject
+		Resources\ChangeLog.txt = Resources\ChangeLog.txt
+		codePlex_Home.txt = codePlex_Home.txt
+		Resources\Copyright.txt = Resources\Copyright.txt
+		Resources\License.txt = Resources\License.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 5

@@ -1,0 +1,134 @@
+*Project Description*
+{project:description}
+
+[image:CodePlex_Documentation_not_finished.png]
+
+!! Table of Contents
+
+* [#Overview]
+** Motivation
+** Features
+** How does the solution work?
+** Screenshots
+* [#Instructions & How to use]
+** Installation
+** Step by Step Configuration
+** Known Issues
+** Future Improvements and Roadmap
+* [#Additional Notes]
+** [#Source Code]
+** [#Further Information]
+** [#Credits]
+** [#Other Projects]
+** [#Final Note]
+
+----
+
+{anchor:Overview}
+!! Overview
+
+!!! Motivation:
+It is quite easy to reload a current QlikView document if you are using the IE-Plugin or QlikView Desktop. But achieving the same result if you are using the Ajax-/Web-/Mobile-Client is a bit more demaning.
+This solution closes the gap using a combined approach of misc. QlikView integration techniques:
+* The QMS API (QlikView Management Services API)
+* A QlikView Object Extension called "CallEdxFromAjax"
+
+!!! Features:
+Using this solution you can offer your QlikView users a solution to reload any QlikView document from within the Ajax-/Mobile-client by just clicking a button.
+
+!!! How does the solution work?
+To get the solution up and running you have to:
+* Install a small webservice
+* Define your reload task within QlikView as EDX task
+* Add the CallEDXFromAjax extension to your document
+* Define which EDX task should be called if the user clicks the button within the extension ...
+*That's it ...*
+
+
+!!! Screenshots:
+
+*CallEDXFromAjax extension in action*
+[image:CallEDXFromAjax_Image1_Click_Running_Completed.png]
+
+*Property dialog 1:*
+[image:CallEDXFromAjax_Prop1.png]
+
+*Property dialog 2:*
+[image:CallEDXFromAjax_Prop2.png]
+
+*Property dialog 3:*
+[image:CallEDXFromAjax_Prop3.png]
+
+----
+
+{anchor:Instructions & How to use}
+!! Instructions - How to use:
+
+{anchor:Installation}
+!!! Installation
+
+To get the solution running you have to install two different components:
+# The web service called "EDXWrapper"
+# The QlikView extension called "CallEDXFromAjax"
+
+!!!! Installation of the Web Service
+
+!!!! Installation of the Extension
+Installation of the QlikView extension easy and straightforward, there is nothing special to take care of:
+
+# Downlod the extension
+# Install the extension on your local computer (doubleclick on the .qar file)
+# Drag'n'Drop the extension within QlikView Desktop (using WebView)
+# Finally deploy the extension to your server (-> [url:detailed instruction|http://www.qlikblog.at/1597/qliktip-40-installingdeploying-qlikview-extensions/])
+
+{anchor:Step by Step}
+!!! Step by Step Configuration
+
+!!!! Web service configuration
+There is a section in the web.config of the web service which looks as follows:
+
+{code:xml}
+<system.web>      
+   <identity impersonate="true" userName="__qvServices" password="Test1234"/>      
+   ...
+</system.web>
+{code:xml}
+
+This section should be changed to work on your system:
+* Define a user here which is part of the "QlikView Management API" windows group on the machine where QlikView Mangement Services are running.
+* The user connecting to the web service "EDXWrapper" is not authenticated, anonymous authentication should be used (in the simplest scenario) to get the web service up and running
+
+{anchor:Known Issues}
+!!! Known Issues
+
+{anchor:Future Improvements and Roadmap}
+!!! Future Improvements and Roadmap:
+
+----
+{anchor:Additional Notes}
+!! Additional Notes
+
+{anchor:Source Code}
+!! Source Code:
+The source code can be found [url:here at CodePlex|http://qvextcalledxfromajax.codeplex.com/SourceControl/BrowseLatest].
+
+Please feel free to use and modify the source code for your own projects but please stay fair and keep in mind:
+
+* If you develop any improvements, please let me know and upload your improvements
+
+{anchor:Further Information}
+!!! Further Information:
+
+{anchor:Credits}
+!!! Credits:
+
+{anchor:Other Projects}
+!!! Other Projects:
+
+Are you interested in other QlikView related projects I have been working on, then [url:here's the place where you'll find an overview|http://www.qlikblog.at/qlikview-projects-stefan-walther/].
+
+{anchor:Final Note}
+!!! Final Note:
+Although I am working at QlikTech this solution and project is not officially supported by QlikTech.
+This is just a private project of a real QlikView enthusiast ... ;-)
+----

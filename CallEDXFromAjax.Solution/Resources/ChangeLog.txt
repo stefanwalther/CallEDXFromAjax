@@ -1,2 +1,6 @@
-﻿===== v1.00 - 03/26/2013 =====
+﻿===== v1.0.1 - 03/27.2012 =====
+* Minor Update
+- Some code formatting
+
+===== v1.0.0 - 03/26/2013 =====
 * Initial versions

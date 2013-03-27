@@ -1,15 +1,18 @@
-﻿using EDXWrapper.QmsAPI;
+﻿#region Using Directives
+using EDXWrapper.QmsAPI;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Web;
-using System.Web.Services;
+using System.Web.Services; 
+#endregion
 
 namespace EDXWrapper
 {
     /// <summary>
-    /// Summary description for QlikViewTasks
+    /// Webservice which wrappes some functionality from the QlikView Mangement Services API (QMSAPI) 
+    /// to trigger EDX tasks and get their current status.
     /// </summary>
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
@@ -36,7 +39,7 @@ namespace EDXWrapper
             // retrieve a time limited service key
             ServiceKeyClientMessageInspector.ServiceKey = apiClient.GetTimeLimitedServiceKey();
 
-            // get a list of QVS services
+            // get the default distribution service
             ServiceInfo qvsService = apiClient.GetServices(ServiceTypes.QlikViewDistributionService).FirstOrDefault();
 
             if (qvsService != null)

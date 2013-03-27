@@ -3,8 +3,8 @@
 // ------------------------------------------------------------------
 // Stefan Walther - 03/26/2013
 //
-// FURTHER INFORMATION:
-//      not yet published, will be published on www.qlikblog.at
+// FURTHER INFORMATION, QUESTIONS and DISCUSSION:
+//      http://www.qlikblog.at/2321
 // ~~
 // DOCUMENTATION:
 //      http://qvextcalledxfromajax.codeplex.com/

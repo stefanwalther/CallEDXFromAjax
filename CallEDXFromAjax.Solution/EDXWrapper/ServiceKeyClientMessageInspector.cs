@@ -1,4 +1,5 @@
-﻿using System;
+﻿#region Using Directives
+using System;
 using System.Collections.Generic;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
@@ -6,6 +7,7 @@ using System.ServiceModel.Configuration;
 using System.ServiceModel.Description;
 using System.ServiceModel.Dispatcher;
 
+#endregion
 
 namespace EDXWrapper
 {
